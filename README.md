@@ -10,7 +10,7 @@
 import SimulatorCheck
 
 if SimulatorCheck.isSimulator {
-// Do something
+    // Do something
 }
 ```
 
