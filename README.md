@@ -7,7 +7,11 @@
 ## Usage
 
 ```swift
-<API>
+import SimulatorCheck
+
+if SimulatorCheck.isSimulator {
+// Do something
+}
 ```
 
 ## Installation
