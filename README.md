@@ -4,6 +4,26 @@
 [![License](https://img.shields.io/cocoapods/l/SimulatorCheck.svg?style=flat)](http://cocoadocs.org/docsets/SimulatorCheck)
 [![Platform](https://img.shields.io/cocoapods/p/SimulatorCheck.svg?style=flat)](http://cocoadocs.org/docsets/SimulatorCheck)
 
+Is common to provide special behavior of your app is running on the Simulator, on Objective-C this was pretty simple, this is how you did it:
+
+```objc
+#if TARGET_IPHONE_SIMULATOR
+    // Simulator
+#else
+    // Device
+#endif
+```
+
+In Swift there's nothing as beautiful as that, so after [looking into StackOverflow I found this](http://stackoverflow.com/questions/24869481/detect-if-app-is-being-built-for-device-or-simulator-in-swift):
+
+```swift
+#if (arch(i386) || arch(x86_64)) && os(iOS)
+    ...
+#endif
+```
+
+Which works pretty nice, but I hate copy pasting the same code everywhere. That's why I made a simple micro-library that helps with this.
+
 ## Usage
 
 ```swift
