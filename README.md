@@ -22,7 +22,7 @@ In Swift there's nothing as beautiful as that, so after [looking into StackOverf
 #endif
 ```
 
-Which works pretty nice, but I hate copy pasting the same code everywhere. That's why I made a simple micro-library that helps with this.
+Which works, but I hate copy pasting the same code everywhere, also `arch(i386)`?! That doesn't say anything, code should be self-explanatory and easy to understand. That's why I made a simple micro-library that helps with this.
 
 ## Usage
 
