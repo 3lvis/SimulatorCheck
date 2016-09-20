@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "SimulatorCheck"
   s.summary          = "Check for code running on the Xcode simulator"
-  s.version          = "0.1.1"
+  s.version          = "1.0.0"
   s.homepage         = "https://github.com/3lvis/SimulatorCheck"
   s.license          = 'MIT'
   s.author           = { "Elvis Nuñez" => "elvisnunez@me.com" }
